@@ -17,14 +17,14 @@ const products = [
     id: 3,
     name: "Mahua Laddu",
     weight: "500gm",
-    price: 300,
+    price: 350,
     image: "/images/products/Mahua-laddu3.jpeg",
   },
   {
     id: 4,
     name: "Mahua Crispy",
     weight: "150gm",
-    price: 150,
+    price: 250,
     image: "/images/products/Mahua-Crispy.jpeg",
   },
 ];
