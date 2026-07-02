@@ -5,12 +5,15 @@ export default function Footer() {
     <footer className="bg-[#f8fcf8] pt-12 pb-4">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
-        <div className="bg-[#edf7ed] rounded-[30px] md:rounded-[50px] border border-green-200 px-6 md:px-12 py-10 shadow-xl">
+        <div
+          data-aos="fade-up"
+          className="bg-[#edf7ed] rounded-[30px] md:rounded-[50px] border border-green-200 px-6 md:px-12 py-10 shadow-xl"
+        >
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
             {/* Column 1 */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <img
                 src="/logo.jpeg"
                 alt="Mahua Delights"
@@ -33,13 +36,14 @@ export default function Footer() {
                   href="https://www.facebook.com/share/19Hg58Wo2u/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
                   className="
                     w-12 h-12
                     bg-green-600 text-white rounded-lg
                     flex items-center justify-center
                     transition-all duration-300
                     hover:bg-green-700 hover:scale-110
-                    active:scale-90
                   "
                 >
                   <FaFacebookF size={20} />
@@ -49,13 +53,14 @@ export default function Footer() {
                   href="https://www.instagram.com/mahua_delights?igsh=MTB3MTdqOXYxMmVmaQ=="
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
                   className="
                     w-12 h-12
                     bg-green-600 text-white rounded-lg
                     flex items-center justify-center
                     transition-all duration-300
                     hover:bg-green-700 hover:scale-110
-                    active:scale-90
                   "
                 >
                   <FaInstagram size={20} />
@@ -65,7 +70,7 @@ export default function Footer() {
             </div>
 
             {/* Column 2 */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <h3 className="footer-heading text-2xl md:text-3xl font-bold mb-4">
                 Useful Links
               </h3>
@@ -73,42 +78,16 @@ export default function Footer() {
               <div className="h-[2px] w-full bg-green-600 mb-6"></div>
 
               <ul className="footer-text space-y-4 text-lg">
-
-                <li>
-                  <a href="#home" className="hover:text-green-600 transition-all duration-300 active:scale-95 inline-block">
-                    Home
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#about" className="hover:text-green-600 transition-all duration-300 active:scale-95 inline-block">
-                    About Us
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#products" className="hover:text-green-600 transition-all duration-300 active:scale-95 inline-block">
-                    Products
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#gallery" className="hover:text-green-600 transition-all duration-300 active:scale-95 inline-block">
-                    Gallery
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#contact" className="hover:text-green-600 transition-all duration-300 active:scale-95 inline-block">
-                    Contact Us
-                  </a>
-                </li>
-
+                <li><a href="#home" className="hover:text-green-600 transition-all duration-300">Home</a></li>
+                <li><a href="#about" className="hover:text-green-600 transition-all duration-300">About Us</a></li>
+                <li><a href="#products" className="hover:text-green-600 transition-all duration-300">Products</a></li>
+                <li><a href="#gallery" className="hover:text-green-600 transition-all duration-300">Gallery</a></li>
+                <li><a href="#contact" className="hover:text-green-600 transition-all duration-300">Contact Us</a></li>
               </ul>
             </div>
 
             {/* Column 3 */}
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
               <h3 className="footer-heading text-2xl md:text-3xl font-bold mb-4">
                 Contact Us
               </h3>
@@ -131,7 +110,10 @@ export default function Footer() {
             </div>
 
             {/* Column 4 */}
-            <div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <iframe
                 title="Utnoor Map"
                 src="https://maps.google.com/maps?q=Utnoor,Telangana,504311&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -148,12 +130,14 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="mt-10 pt-6 border-t border-green-300 text-center">
-
+          <div
+            data-aos="fade-up"
+            data-aos-delay="700"
+            className="mt-10 pt-6 border-t border-green-300 text-center"
+          >
             <p className="footer-text text-sm md:text-base text-gray-700">
               © 2026 Mahua Delights. All Rights Reserved.
             </p>
-
           </div>
 
         </div>

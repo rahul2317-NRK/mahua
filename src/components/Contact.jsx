@@ -14,7 +14,10 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-4 md:px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+          data-aos="fade-up"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#6B3F2A] mb-4">
             We're Here For You
           </h2>
@@ -30,6 +33,8 @@ export default function Contact() {
           {/* Email */}
           <a
             href="mailto:mahuadelights@gmail.com"
+            data-aos="fade-up"
+            data-aos-delay="100"
             className="
               bg-[#f8f0f0]
               rounded-3xl
@@ -39,8 +44,6 @@ export default function Contact() {
               hover:shadow-2xl
               hover:-translate-y-2
               hover:scale-105
-              active:scale-95
-              touch-manipulation
             "
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -61,6 +64,8 @@ export default function Contact() {
             href="https://wa.me/917993635905"
             target="_blank"
             rel="noopener noreferrer"
+            data-aos="fade-up"
+            data-aos-delay="200"
             className="
               bg-[#f8f0f0]
               rounded-3xl
@@ -70,8 +75,6 @@ export default function Contact() {
               hover:shadow-2xl
               hover:-translate-y-2
               hover:scale-105
-              active:scale-95
-              touch-manipulation
             "
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -89,6 +92,8 @@ export default function Contact() {
 
           {/* Social */}
           <div
+            data-aos="fade-up"
+            data-aos-delay="300"
             className="
               bg-[#f8f0f0]
               rounded-3xl
@@ -98,7 +103,6 @@ export default function Contact() {
               hover:shadow-2xl
               hover:-translate-y-2
               hover:scale-105
-              active:scale-95
             "
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-6">
@@ -117,7 +121,6 @@ export default function Contact() {
                   flex items-center justify-center
                   transition-all duration-300
                   hover:scale-110
-                  active:scale-90
                 "
               >
                 <FaInstagram size={24} />
@@ -133,7 +136,6 @@ export default function Contact() {
                   flex items-center justify-center
                   transition-all duration-300
                   hover:scale-110
-                  active:scale-90
                 "
               >
                 <FaFacebookF size={24} />
@@ -149,7 +151,6 @@ export default function Contact() {
                   flex items-center justify-center
                   transition-all duration-300
                   hover:scale-110
-                  active:scale-90
                 "
               >
                 <FaWhatsapp size={24} />

@@ -13,7 +13,10 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+          data-aos="fade-up"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Gallery
           </h2>
@@ -28,6 +31,8 @@ export default function Gallery() {
           {images.map((image, index) => (
             <div
               key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
               className="
                 overflow-hidden
                 rounded-3xl

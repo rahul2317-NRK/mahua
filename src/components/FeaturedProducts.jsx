@@ -6,7 +6,10 @@ export default function FeaturedProducts() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16"
+        >
           Product Catalogue
         </h2>
 
@@ -16,6 +19,8 @@ export default function FeaturedProducts() {
           {products.map((product, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className="
                 bg-white rounded-2xl overflow-hidden
                 shadow-md
@@ -28,7 +33,6 @@ export default function FeaturedProducts() {
                 touch-manipulation
               "
             >
-
               {/* Product Image */}
               <div className="h-72 md:h-80 flex items-center justify-center bg-white p-4 md:p-6">
 
