@@ -26,14 +26,14 @@ export default function Navbar() {
           {/* Logo Left */}
           <div className="absolute left-6">
             <img
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Mahua Delights"
               className="h-16 w-auto"
             />
           </div>
 
           {/* Center Menu */}
-          <ul className="w-full flex justify-center gap-12 font-semibold text-lg">
+          <ul className="w-full flex justify-center gap-12 font-semibold tracking-wide text-lg">
             <li>
               <a href="#hero" className="hover:text-orange-600 hover:scale-105 transition-all duration-300">
                 HOME
@@ -41,7 +41,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="#featuredproducts" className="hover:text-orange-600 hover:scale-105 transition-all duration-300">
+              <a href="#products" className="hover:text-orange-600 hover:scale-105 transition-all duration-300">
                 PRODUCTS
               </a>
             </li>

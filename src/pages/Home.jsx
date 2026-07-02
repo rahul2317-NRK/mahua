@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Benefits from "../components/Benefits";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Gallery />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

@@ -2,7 +2,7 @@ import products from "../data/products";
 
 export default function FeaturedProducts() {
   return (
-    <section id="featuredproducts" className="py-24 bg-gray-50">
+    <section id="products" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-5xl font-bold text-center mb-16">
@@ -16,12 +16,17 @@ export default function FeaturedProducts() {
               key={product.id}
               className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-3 hover:scale-105 transition-all duration-300 cursor-pointer"
             >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-64 object-cover"
-              />
 
+              {/* Product Image */}
+              <div className="h-80 flex items-center justify-center bg-white p-6">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+
+              {/* Product Details */}
               <div className="p-6">
 
                 <h3 className="text-xl font-bold mb-3">
@@ -37,6 +42,7 @@ export default function FeaturedProducts() {
                 </p>
 
               </div>
+
             </div>
           ))}
 
